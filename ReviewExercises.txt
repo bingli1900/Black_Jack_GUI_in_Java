@@ -1,0 +1,70 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R13.1 Terms
+
+    Define the terms
+
+    a. Recursion
+
+        recursion breaks up complex computational problems into simpler,
+        ones. The term “recursion” refers to the fact
+        that the same computation recurs, or occurs repeatedly,
+        as the problem is solved.
+
+    b. Iteration
+
+        scan all items one by one, solve the problem by going through all
+        cases.
+
+    c. Infinite recursion
+
+        A common programming error is an infinite recursion: a method calling itself over and over
+        with no end in sight.
+
+    d. Recursive helper method
+        Sometimes it is easier to find a recursive
+        solution if you change the original problem
+        slightly. Then the original problem can be
+        solved by calling a recursive helper method.
+
+R13.2 Smallest value
+
+    Outline, but do not implement, a recursive solution for finding the smallest value in
+    an array.
+    smallest(array){
+        if array has only one element, then
+            return it
+        else
+            compare first element and smallest(rest array)
+            return the smaller one of them.
+    }
+
+R13.3 Sort array of numbers
+
+    Outline, but do not implement, a recursive solution for sorting an array of numbers.
+    Hint: First find the smallest value in the array.
+
+    we can use the method in R13.2
+
+    sort(array){
+        if there is only one element in this array
+            print it
+        else
+            find the smallest one and print it
+            sort(the rest terms of this array)
+    }
+
+R13.6 Exponents recursively
+
+    1. x^n = x * x^(n-1)
+    2. termination condition: if n = 0, return 1
+
+R13.8 Factorial recursively
+
+    Write a recursive definition of n! = 1 × 2 × . . . × n, similar to the recursive definition
+    of the Fibonacci numbers.
+
+    1. n! = n * (n-1)!
+    2. termination condition: if n = 0, return 1
